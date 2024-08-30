@@ -67,7 +67,8 @@ func NewPostLeasesCreated() *PostLeasesCreated {
 	return &PostLeasesCreated{}
 }
 
-/*PostLeasesCreated handles this case with default header values.
+/*
+PostLeasesCreated handles this case with default header values.
 
 PostLeasesCreated post leases created
 */
@@ -115,10 +116,10 @@ func NewPostLeasesBadRequest() *PostLeasesBadRequest {
 	return &PostLeasesBadRequest{}
 }
 
-/*PostLeasesBadRequest handles this case with default header values.
+/*
+PostLeasesBadRequest handles this case with default header values.
 
 If the "expiresOn" date specified is non-zero but less than the current epoch date,  "Requested lease has a desired expiry date less than today: <date>" or "Failed to Parse Request Body" if the request body is blank or incorrectly formatted.
-
 */
 type PostLeasesBadRequest struct {
 }
@@ -137,7 +138,8 @@ func NewPostLeasesForbidden() *PostLeasesForbidden {
 	return &PostLeasesForbidden{}
 }
 
-/*PostLeasesForbidden handles this case with default header values.
+/*
+PostLeasesForbidden handles this case with default header values.
 
 Failed to authenticate request
 */
@@ -158,7 +160,8 @@ func NewPostLeasesConflict() *PostLeasesConflict {
 	return &PostLeasesConflict{}
 }
 
-/*PostLeasesConflict handles this case with default header values.
+/*
+PostLeasesConflict handles this case with default header values.
 
 Conflict if there is an existing lease already active with the provided principal and account.
 */
@@ -179,7 +182,8 @@ func NewPostLeasesInternalServerError() *PostLeasesInternalServerError {
 	return &PostLeasesInternalServerError{}
 }
 
-/*PostLeasesInternalServerError handles this case with default header values.
+/*
+PostLeasesInternalServerError handles this case with default header values.
 
 Server errors if the database cannot be reached.
 */
@@ -195,7 +199,8 @@ func (o *PostLeasesInternalServerError) readResponse(response runtime.ClientResp
 	return nil
 }
 
-/*PostLeasesBody post leases body
+/*
+PostLeasesBody post leases body
 swagger:model PostLeasesBody
 */
 type PostLeasesBody struct {
@@ -300,7 +305,8 @@ func (o *PostLeasesBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*PostLeasesCreatedBody Lease Details
+/*
+PostLeasesCreatedBody Lease Details
 swagger:model PostLeasesCreatedBody
 */
 type PostLeasesCreatedBody struct {

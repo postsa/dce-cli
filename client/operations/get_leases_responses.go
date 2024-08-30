@@ -55,7 +55,8 @@ func NewGetLeasesOK() *GetLeasesOK {
 	return &GetLeasesOK{}
 }
 
-/*GetLeasesOK handles this case with default header values.
+/*
+GetLeasesOK handles this case with default header values.
 
 OK
 */
@@ -107,10 +108,10 @@ func NewGetLeasesBadRequest() *GetLeasesBadRequest {
 	return &GetLeasesBadRequest{}
 }
 
-/*GetLeasesBadRequest handles this case with default header values.
+/*
+GetLeasesBadRequest handles this case with default header values.
 
 "Failed to Parse Request Body" if the request body is blank or incorrectly formatted.
-
 */
 type GetLeasesBadRequest struct {
 }
@@ -129,7 +130,8 @@ func NewGetLeasesForbidden() *GetLeasesForbidden {
 	return &GetLeasesForbidden{}
 }
 
-/*GetLeasesForbidden handles this case with default header values.
+/*
+GetLeasesForbidden handles this case with default header values.
 
 Failed to authenticate request
 */
@@ -145,7 +147,8 @@ func (o *GetLeasesForbidden) readResponse(response runtime.ClientResponse, consu
 	return nil
 }
 
-/*GetLeasesOKBodyItems0 Lease Details
+/*
+GetLeasesOKBodyItems0 Lease Details
 swagger:model GetLeasesOKBodyItems0
 */
 type GetLeasesOKBodyItems0 struct {

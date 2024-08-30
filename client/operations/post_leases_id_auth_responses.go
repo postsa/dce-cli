@@ -58,7 +58,8 @@ func NewPostLeasesIDAuthCreated() *PostLeasesIDAuthCreated {
 	return &PostLeasesIDAuthCreated{}
 }
 
-/*PostLeasesIDAuthCreated handles this case with default header values.
+/*
+PostLeasesIDAuthCreated handles this case with default header values.
 
 PostLeasesIDAuthCreated post leases Id auth created
 */
@@ -106,7 +107,8 @@ func NewPostLeasesIDAuthUnauthorized() *PostLeasesIDAuthUnauthorized {
 	return &PostLeasesIDAuthUnauthorized{}
 }
 
-/*PostLeasesIDAuthUnauthorized handles this case with default header values.
+/*
+PostLeasesIDAuthUnauthorized handles this case with default header values.
 
 Unauthorized
 */
@@ -127,7 +129,8 @@ func NewPostLeasesIDAuthForbidden() *PostLeasesIDAuthForbidden {
 	return &PostLeasesIDAuthForbidden{}
 }
 
-/*PostLeasesIDAuthForbidden handles this case with default header values.
+/*
+PostLeasesIDAuthForbidden handles this case with default header values.
 
 Failed to retrieve lease authentication
 */
@@ -148,7 +151,8 @@ func NewPostLeasesIDAuthInternalServerError() *PostLeasesIDAuthInternalServerErr
 	return &PostLeasesIDAuthInternalServerError{}
 }
 
-/*PostLeasesIDAuthInternalServerError handles this case with default header values.
+/*
+PostLeasesIDAuthInternalServerError handles this case with default header values.
 
 Server failure
 */
@@ -164,7 +168,8 @@ func (o *PostLeasesIDAuthInternalServerError) readResponse(response runtime.Clie
 	return nil
 }
 
-/*PostLeasesIDAuthCreatedBody Lease Authentication
+/*
+PostLeasesIDAuthCreatedBody Lease Authentication
 swagger:model PostLeasesIDAuthCreatedBody
 */
 type PostLeasesIDAuthCreatedBody struct {

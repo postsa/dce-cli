@@ -38,7 +38,8 @@ func NewOptionsAuthFileOK() *OptionsAuthFileOK {
 	return &OptionsAuthFileOK{}
 }
 
-/*OptionsAuthFileOK handles this case with default header values.
+/*
+OptionsAuthFileOK handles this case with default header values.
 
 Default response for CORS method
 */

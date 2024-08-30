@@ -56,7 +56,8 @@ func NewOptionsAuthFileParamsWithHTTPClient(client *http.Client) *OptionsAuthFil
 	}
 }
 
-/*OptionsAuthFileParams contains all the parameters to send to the API endpoint
+/*
+OptionsAuthFileParams contains all the parameters to send to the API endpoint
 for the options auth file operation typically these are written to a http.Request
 */
 type OptionsAuthFileParams struct {

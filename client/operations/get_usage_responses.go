@@ -46,7 +46,8 @@ func NewGetUsageOK() *GetUsageOK {
 	return &GetUsageOK{}
 }
 
-/*GetUsageOK handles this case with default header values.
+/*
+GetUsageOK handles this case with default header values.
 
 GetUsageOK get usage o k
 */
@@ -94,7 +95,8 @@ func NewGetUsageForbidden() *GetUsageForbidden {
 	return &GetUsageForbidden{}
 }
 
-/*GetUsageForbidden handles this case with default header values.
+/*
+GetUsageForbidden handles this case with default header values.
 
 Failed to authenticate request
 */
@@ -110,7 +112,8 @@ func (o *GetUsageForbidden) readResponse(response runtime.ClientResponse, consum
 	return nil
 }
 
-/*GetUsageOKBody usage cost of the aws account from start date to end date
+/*
+GetUsageOKBody usage cost of the aws account from start date to end date
 swagger:model GetUsageOKBody
 */
 type GetUsageOKBody struct {

@@ -56,7 +56,8 @@ func NewPostLeasesParamsWithHTTPClient(client *http.Client) *PostLeasesParams {
 	}
 }
 
-/*PostLeasesParams contains all the parameters to send to the API endpoint
+/*
+PostLeasesParams contains all the parameters to send to the API endpoint
 for the post leases operation typically these are written to a http.Request
 */
 type PostLeasesParams struct {

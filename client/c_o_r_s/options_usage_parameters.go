@@ -56,7 +56,8 @@ func NewOptionsUsageParamsWithHTTPClient(client *http.Client) *OptionsUsageParam
 	}
 }
 
-/*OptionsUsageParams contains all the parameters to send to the API endpoint
+/*
+OptionsUsageParams contains all the parameters to send to the API endpoint
 for the options usage operation typically these are written to a http.Request
 */
 type OptionsUsageParams struct {

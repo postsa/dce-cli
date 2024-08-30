@@ -61,7 +61,8 @@ func NewDeleteLeasesIDOK() *DeleteLeasesIDOK {
 	return &DeleteLeasesIDOK{}
 }
 
-/*DeleteLeasesIDOK handles this case with default header values.
+/*
+DeleteLeasesIDOK handles this case with default header values.
 
 DeleteLeasesIDOK delete leases Id o k
 */
@@ -97,10 +98,10 @@ func NewDeleteLeasesIDBadRequest() *DeleteLeasesIDBadRequest {
 	return &DeleteLeasesIDBadRequest{}
 }
 
-/*DeleteLeasesIDBadRequest handles this case with default header values.
+/*
+DeleteLeasesIDBadRequest handles this case with default header values.
 
 "Failed to Parse Request Body" if the request body is blank or incorrectly formatted. or if there are no account leases found for the specified accountId or if the account specified is not already Active.
-
 */
 type DeleteLeasesIDBadRequest struct {
 }
@@ -119,7 +120,8 @@ func NewDeleteLeasesIDForbidden() *DeleteLeasesIDForbidden {
 	return &DeleteLeasesIDForbidden{}
 }
 
-/*DeleteLeasesIDForbidden handles this case with default header values.
+/*
+DeleteLeasesIDForbidden handles this case with default header values.
 
 Failed to authenticate request
 */
@@ -140,7 +142,8 @@ func NewDeleteLeasesIDInternalServerError() *DeleteLeasesIDInternalServerError {
 	return &DeleteLeasesIDInternalServerError{}
 }
 
-/*DeleteLeasesIDInternalServerError handles this case with default header values.
+/*
+DeleteLeasesIDInternalServerError handles this case with default header values.
 
 Server errors if the database cannot be reached.
 */
@@ -156,7 +159,8 @@ func (o *DeleteLeasesIDInternalServerError) readResponse(response runtime.Client
 	return nil
 }
 
-/*DeleteLeasesIDOKBody Lease Details
+/*
+DeleteLeasesIDOKBody Lease Details
 swagger:model DeleteLeasesIDOKBody
 */
 type DeleteLeasesIDOKBody struct {

@@ -49,10 +49,9 @@ type ClientService interface {
 }
 
 /*
-  OptionsAccounts cs o r s support
+OptionsAccounts cs o r s support
 
-  Enable CORS by returning correct headers
-
+Enable CORS by returning correct headers
 */
 func (a *Client) OptionsAccounts(params *OptionsAccountsParams) (*OptionsAccountsOK, error) {
 	// TODO: Validate the params before sending
@@ -86,10 +85,9 @@ func (a *Client) OptionsAccounts(params *OptionsAccountsParams) (*OptionsAccount
 }
 
 /*
-  OptionsAccountsID cs o r s support
+OptionsAccountsID cs o r s support
 
-  Enable CORS by returning correct headers
-
+Enable CORS by returning correct headers
 */
 func (a *Client) OptionsAccountsID(params *OptionsAccountsIDParams) (*OptionsAccountsIDOK, error) {
 	// TODO: Validate the params before sending
@@ -123,10 +121,9 @@ func (a *Client) OptionsAccountsID(params *OptionsAccountsIDParams) (*OptionsAcc
 }
 
 /*
-  OptionsAuth cs o r s support
+OptionsAuth cs o r s support
 
-  Enable CORS by returning correct headers
-
+Enable CORS by returning correct headers
 */
 func (a *Client) OptionsAuth(params *OptionsAuthParams) (*OptionsAuthOK, error) {
 	// TODO: Validate the params before sending
@@ -160,10 +157,9 @@ func (a *Client) OptionsAuth(params *OptionsAuthParams) (*OptionsAuthOK, error) 
 }
 
 /*
-  OptionsAuthFile cs o r s support
+OptionsAuthFile cs o r s support
 
-  Enable CORS by returning correct headers
-
+Enable CORS by returning correct headers
 */
 func (a *Client) OptionsAuthFile(params *OptionsAuthFileParams) (*OptionsAuthFileOK, error) {
 	// TODO: Validate the params before sending
@@ -197,10 +193,9 @@ func (a *Client) OptionsAuthFile(params *OptionsAuthFileParams) (*OptionsAuthFil
 }
 
 /*
-  OptionsLeases cs o r s support
+OptionsLeases cs o r s support
 
-  Enable CORS by returning correct headers
-
+Enable CORS by returning correct headers
 */
 func (a *Client) OptionsLeases(params *OptionsLeasesParams) (*OptionsLeasesOK, error) {
 	// TODO: Validate the params before sending
@@ -234,10 +229,9 @@ func (a *Client) OptionsLeases(params *OptionsLeasesParams) (*OptionsLeasesOK, e
 }
 
 /*
-  OptionsLeasesAuth cs o r s support
+OptionsLeasesAuth cs o r s support
 
-  Enable CORS by returning correct headers
-
+Enable CORS by returning correct headers
 */
 func (a *Client) OptionsLeasesAuth(params *OptionsLeasesAuthParams) (*OptionsLeasesAuthOK, error) {
 	// TODO: Validate the params before sending
@@ -271,10 +265,9 @@ func (a *Client) OptionsLeasesAuth(params *OptionsLeasesAuthParams) (*OptionsLea
 }
 
 /*
-  OptionsLeasesID cs o r s support
+OptionsLeasesID cs o r s support
 
-  Enable CORS by returning correct headers
-
+Enable CORS by returning correct headers
 */
 func (a *Client) OptionsLeasesID(params *OptionsLeasesIDParams) (*OptionsLeasesIDOK, error) {
 	// TODO: Validate the params before sending
@@ -308,10 +301,9 @@ func (a *Client) OptionsLeasesID(params *OptionsLeasesIDParams) (*OptionsLeasesI
 }
 
 /*
-  OptionsLeasesIDAuth cs o r s support
+OptionsLeasesIDAuth cs o r s support
 
-  Enable CORS by returning correct headers
-
+Enable CORS by returning correct headers
 */
 func (a *Client) OptionsLeasesIDAuth(params *OptionsLeasesIDAuthParams) (*OptionsLeasesIDAuthOK, error) {
 	// TODO: Validate the params before sending
@@ -345,10 +337,9 @@ func (a *Client) OptionsLeasesIDAuth(params *OptionsLeasesIDAuthParams) (*Option
 }
 
 /*
-  OptionsUsage cs o r s support
+OptionsUsage cs o r s support
 
-  Enable CORS by returning correct headers
-
+Enable CORS by returning correct headers
 */
 func (a *Client) OptionsUsage(params *OptionsUsageParams) (*OptionsUsageOK, error) {
 	// TODO: Validate the params before sending

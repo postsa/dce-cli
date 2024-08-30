@@ -49,7 +49,8 @@ func NewGetLeasesIDOK() *GetLeasesIDOK {
 	return &GetLeasesIDOK{}
 }
 
-/*GetLeasesIDOK handles this case with default header values.
+/*
+GetLeasesIDOK handles this case with default header values.
 
 GetLeasesIDOK get leases Id o k
 */
@@ -97,7 +98,8 @@ func NewGetLeasesIDForbidden() *GetLeasesIDForbidden {
 	return &GetLeasesIDForbidden{}
 }
 
-/*GetLeasesIDForbidden handles this case with default header values.
+/*
+GetLeasesIDForbidden handles this case with default header values.
 
 Failed to retrieve lease
 */
@@ -113,7 +115,8 @@ func (o *GetLeasesIDForbidden) readResponse(response runtime.ClientResponse, con
 	return nil
 }
 
-/*GetLeasesIDOKBody Lease Details
+/*
+GetLeasesIDOKBody Lease Details
 swagger:model GetLeasesIDOKBody
 */
 type GetLeasesIDOKBody struct {

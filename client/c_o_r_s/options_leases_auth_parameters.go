@@ -56,7 +56,8 @@ func NewOptionsLeasesAuthParamsWithHTTPClient(client *http.Client) *OptionsLease
 	}
 }
 
-/*OptionsLeasesAuthParams contains all the parameters to send to the API endpoint
+/*
+OptionsLeasesAuthParams contains all the parameters to send to the API endpoint
 for the options leases auth operation typically these are written to a http.Request
 */
 type OptionsLeasesAuthParams struct {

@@ -56,7 +56,8 @@ func NewGetLeasesIDParamsWithHTTPClient(client *http.Client) *GetLeasesIDParams 
 	}
 }
 
-/*GetLeasesIDParams contains all the parameters to send to the API endpoint
+/*
+GetLeasesIDParams contains all the parameters to send to the API endpoint
 for the get leases ID operation typically these are written to a http.Request
 */
 type GetLeasesIDParams struct {

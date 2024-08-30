@@ -49,7 +49,8 @@ func NewGetAccountsOK() *GetAccountsOK {
 	return &GetAccountsOK{}
 }
 
-/*GetAccountsOK handles this case with default header values.
+/*
+GetAccountsOK handles this case with default header values.
 
 OK
 */
@@ -101,7 +102,8 @@ func NewGetAccountsForbidden() *GetAccountsForbidden {
 	return &GetAccountsForbidden{}
 }
 
-/*GetAccountsForbidden handles this case with default header values.
+/*
+GetAccountsForbidden handles this case with default header values.
 
 Unauthorized
 */
@@ -117,7 +119,8 @@ func (o *GetAccountsForbidden) readResponse(response runtime.ClientResponse, con
 	return nil
 }
 
-/*GetAccountsOKBodyItems0 Account Details
+/*
+GetAccountsOKBodyItems0 Account Details
 swagger:model GetAccountsOKBodyItems0
 */
 type GetAccountsOKBodyItems0 struct {

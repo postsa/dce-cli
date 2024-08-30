@@ -39,7 +39,8 @@ func NewGetAuthFileOK() *GetAuthFileOK {
 	return &GetAuthFileOK{}
 }
 
-/*GetAuthFileOK handles this case with default header values.
+/*
+GetAuthFileOK handles this case with default header values.
 
 GetAuthFileOK get auth file o k
 */

@@ -38,7 +38,8 @@ func NewOptionsAccountsIDOK() *OptionsAccountsIDOK {
 	return &OptionsAccountsIDOK{}
 }
 
-/*OptionsAccountsIDOK handles this case with default header values.
+/*
+OptionsAccountsIDOK handles this case with default header values.
 
 Default response for CORS method
 */

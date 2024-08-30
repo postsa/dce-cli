@@ -56,7 +56,8 @@ func NewGetAuthParamsWithHTTPClient(client *http.Client) *GetAuthParams {
 	}
 }
 
-/*GetAuthParams contains all the parameters to send to the API endpoint
+/*
+GetAuthParams contains all the parameters to send to the API endpoint
 for the get auth operation typically these are written to a http.Request
 */
 type GetAuthParams struct {

@@ -45,7 +45,8 @@ func NewPutAccountsIDOK() *PutAccountsIDOK {
 	return &PutAccountsIDOK{}
 }
 
-/*PutAccountsIDOK handles this case with default header values.
+/*
+PutAccountsIDOK handles this case with default header values.
 
 Account Details
 */
@@ -80,7 +81,8 @@ func NewPutAccountsIDForbidden() *PutAccountsIDForbidden {
 	return &PutAccountsIDForbidden{}
 }
 
-/*PutAccountsIDForbidden handles this case with default header values.
+/*
+PutAccountsIDForbidden handles this case with default header values.
 
 Forbidden
 */
@@ -96,7 +98,8 @@ func (o *PutAccountsIDForbidden) readResponse(response runtime.ClientResponse, c
 	return nil
 }
 
-/*PutAccountsIDBody put accounts ID body
+/*
+PutAccountsIDBody put accounts ID body
 swagger:model PutAccountsIDBody
 */
 type PutAccountsIDBody struct {

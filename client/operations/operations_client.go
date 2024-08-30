@@ -61,7 +61,7 @@ type ClientService interface {
 }
 
 /*
-  DeleteAccountsID deletes an account by ID
+DeleteAccountsID deletes an account by ID
 */
 func (a *Client) DeleteAccountsID(params *DeleteAccountsIDParams, authInfo runtime.ClientAuthInfoWriter) (*DeleteAccountsIDNoContent, error) {
 	// TODO: Validate the params before sending
@@ -96,7 +96,7 @@ func (a *Client) DeleteAccountsID(params *DeleteAccountsIDParams, authInfo runti
 }
 
 /*
-  DeleteLeases removes a lease
+DeleteLeases removes a lease
 */
 func (a *Client) DeleteLeases(params *DeleteLeasesParams, authInfo runtime.ClientAuthInfoWriter) (*DeleteLeasesOK, error) {
 	// TODO: Validate the params before sending
@@ -131,7 +131,7 @@ func (a *Client) DeleteLeases(params *DeleteLeasesParams, authInfo runtime.Clien
 }
 
 /*
-  DeleteLeasesID deletes a lease by ID
+DeleteLeasesID deletes a lease by ID
 */
 func (a *Client) DeleteLeasesID(params *DeleteLeasesIDParams, authInfo runtime.ClientAuthInfoWriter) (*DeleteLeasesIDOK, error) {
 	// TODO: Validate the params before sending
@@ -166,7 +166,7 @@ func (a *Client) DeleteLeasesID(params *DeleteLeasesIDParams, authInfo runtime.C
 }
 
 /*
-  GetAccounts gets accounts
+GetAccounts gets accounts
 */
 func (a *Client) GetAccounts(params *GetAccountsParams, authInfo runtime.ClientAuthInfoWriter) (*GetAccountsOK, error) {
 	// TODO: Validate the params before sending
@@ -201,7 +201,7 @@ func (a *Client) GetAccounts(params *GetAccountsParams, authInfo runtime.ClientA
 }
 
 /*
-  GetAccountsID gets a specific account by an account ID
+GetAccountsID gets a specific account by an account ID
 */
 func (a *Client) GetAccountsID(params *GetAccountsIDParams, authInfo runtime.ClientAuthInfoWriter) (*GetAccountsIDOK, error) {
 	// TODO: Validate the params before sending
@@ -236,7 +236,7 @@ func (a *Client) GetAccountsID(params *GetAccountsIDParams, authInfo runtime.Cli
 }
 
 /*
-  GetAuth gets the d c e system authentication web page
+GetAuth gets the d c e system authentication web page
 */
 func (a *Client) GetAuth(params *GetAuthParams) (*GetAuthOK, error) {
 	// TODO: Validate the params before sending
@@ -270,7 +270,7 @@ func (a *Client) GetAuth(params *GetAuthParams) (*GetAuthOK, error) {
 }
 
 /*
-  GetAuthFile gets the d c e system authentication web page static assets
+GetAuthFile gets the d c e system authentication web page static assets
 */
 func (a *Client) GetAuthFile(params *GetAuthFileParams) (*GetAuthFileOK, error) {
 	// TODO: Validate the params before sending
@@ -304,7 +304,7 @@ func (a *Client) GetAuthFile(params *GetAuthFileParams) (*GetAuthFileOK, error) 
 }
 
 /*
-  GetLeases gets leases
+GetLeases gets leases
 */
 func (a *Client) GetLeases(params *GetLeasesParams, authInfo runtime.ClientAuthInfoWriter) (*GetLeasesOK, error) {
 	// TODO: Validate the params before sending
@@ -339,7 +339,7 @@ func (a *Client) GetLeases(params *GetLeasesParams, authInfo runtime.ClientAuthI
 }
 
 /*
-  GetLeasesID gets a lease by Id
+GetLeasesID gets a lease by Id
 */
 func (a *Client) GetLeasesID(params *GetLeasesIDParams, authInfo runtime.ClientAuthInfoWriter) (*GetLeasesIDOK, error) {
 	// TODO: Validate the params before sending
@@ -374,7 +374,7 @@ func (a *Client) GetLeasesID(params *GetLeasesIDParams, authInfo runtime.ClientA
 }
 
 /*
-  GetUsage gets usage records by date range
+GetUsage gets usage records by date range
 */
 func (a *Client) GetUsage(params *GetUsageParams, authInfo runtime.ClientAuthInfoWriter) (*GetUsageOK, error) {
 	// TODO: Validate the params before sending
@@ -409,7 +409,7 @@ func (a *Client) GetUsage(params *GetUsageParams, authInfo runtime.ClientAuthInf
 }
 
 /*
-  PostAccounts adds an a w s account to the account pool
+PostAccounts adds an a w s account to the account pool
 */
 func (a *Client) PostAccounts(params *PostAccountsParams, authInfo runtime.ClientAuthInfoWriter) (*PostAccountsCreated, error) {
 	// TODO: Validate the params before sending
@@ -444,7 +444,7 @@ func (a *Client) PostAccounts(params *PostAccountsParams, authInfo runtime.Clien
 }
 
 /*
-  PostLeases creates a new lease
+PostLeases creates a new lease
 */
 func (a *Client) PostLeases(params *PostLeasesParams, authInfo runtime.ClientAuthInfoWriter) (*PostLeasesCreated, error) {
 	// TODO: Validate the params before sending
@@ -479,7 +479,7 @@ func (a *Client) PostLeases(params *PostLeasesParams, authInfo runtime.ClientAut
 }
 
 /*
-  PostLeasesAuth creates lease authentication by for the requesting user s active lease
+PostLeasesAuth creates lease authentication by for the requesting user s active lease
 */
 func (a *Client) PostLeasesAuth(params *PostLeasesAuthParams, authInfo runtime.ClientAuthInfoWriter) (*PostLeasesAuthCreated, error) {
 	// TODO: Validate the params before sending
@@ -514,7 +514,7 @@ func (a *Client) PostLeasesAuth(params *PostLeasesAuthParams, authInfo runtime.C
 }
 
 /*
-  PostLeasesIDAuth creates lease authentication by Id
+PostLeasesIDAuth creates lease authentication by Id
 */
 func (a *Client) PostLeasesIDAuth(params *PostLeasesIDAuthParams, authInfo runtime.ClientAuthInfoWriter) (*PostLeasesIDAuthCreated, error) {
 	// TODO: Validate the params before sending
@@ -549,7 +549,7 @@ func (a *Client) PostLeasesIDAuth(params *PostLeasesIDAuthParams, authInfo runti
 }
 
 /*
-  PutAccountsID updates an account
+PutAccountsID updates an account
 */
 func (a *Client) PutAccountsID(params *PutAccountsIDParams, authInfo runtime.ClientAuthInfoWriter) (*PutAccountsIDOK, error) {
 	// TODO: Validate the params before sending

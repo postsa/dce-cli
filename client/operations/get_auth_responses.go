@@ -39,7 +39,8 @@ func NewGetAuthOK() *GetAuthOK {
 	return &GetAuthOK{}
 }
 
-/*GetAuthOK handles this case with default header values.
+/*
+GetAuthOK handles this case with default header values.
 
 GetAuthOK get auth o k
 */

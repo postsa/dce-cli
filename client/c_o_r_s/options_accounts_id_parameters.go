@@ -56,7 +56,8 @@ func NewOptionsAccountsIDParamsWithHTTPClient(client *http.Client) *OptionsAccou
 	}
 }
 
-/*OptionsAccountsIDParams contains all the parameters to send to the API endpoint
+/*
+OptionsAccountsIDParams contains all the parameters to send to the API endpoint
 for the options accounts ID operation typically these are written to a http.Request
 */
 type OptionsAccountsIDParams struct {

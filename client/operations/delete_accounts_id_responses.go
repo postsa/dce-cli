@@ -56,7 +56,8 @@ func NewDeleteAccountsIDNoContent() *DeleteAccountsIDNoContent {
 	return &DeleteAccountsIDNoContent{}
 }
 
-/*DeleteAccountsIDNoContent handles this case with default header values.
+/*
+DeleteAccountsIDNoContent handles this case with default header values.
 
 The account has been successfully deleted.
 */
@@ -91,7 +92,8 @@ func NewDeleteAccountsIDForbidden() *DeleteAccountsIDForbidden {
 	return &DeleteAccountsIDForbidden{}
 }
 
-/*DeleteAccountsIDForbidden handles this case with default header values.
+/*
+DeleteAccountsIDForbidden handles this case with default header values.
 
 Unauthorized.
 */
@@ -112,7 +114,8 @@ func NewDeleteAccountsIDNotFound() *DeleteAccountsIDNotFound {
 	return &DeleteAccountsIDNotFound{}
 }
 
-/*DeleteAccountsIDNotFound handles this case with default header values.
+/*
+DeleteAccountsIDNotFound handles this case with default header values.
 
 No account found for the given ID.
 */
@@ -133,7 +136,8 @@ func NewDeleteAccountsIDConflict() *DeleteAccountsIDConflict {
 	return &DeleteAccountsIDConflict{}
 }
 
-/*DeleteAccountsIDConflict handles this case with default header values.
+/*
+DeleteAccountsIDConflict handles this case with default header values.
 
 The account is unable to be deleted.
 */

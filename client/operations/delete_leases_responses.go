@@ -61,7 +61,8 @@ func NewDeleteLeasesOK() *DeleteLeasesOK {
 	return &DeleteLeasesOK{}
 }
 
-/*DeleteLeasesOK handles this case with default header values.
+/*
+DeleteLeasesOK handles this case with default header values.
 
 DeleteLeasesOK delete leases o k
 */
@@ -97,10 +98,10 @@ func NewDeleteLeasesBadRequest() *DeleteLeasesBadRequest {
 	return &DeleteLeasesBadRequest{}
 }
 
-/*DeleteLeasesBadRequest handles this case with default header values.
+/*
+DeleteLeasesBadRequest handles this case with default header values.
 
 "Failed to Parse Request Body" if the request body is blank or incorrectly formatted. or if there are no account leases found for the specified accountId or if the account specified is not already Active.
-
 */
 type DeleteLeasesBadRequest struct {
 }
@@ -119,7 +120,8 @@ func NewDeleteLeasesForbidden() *DeleteLeasesForbidden {
 	return &DeleteLeasesForbidden{}
 }
 
-/*DeleteLeasesForbidden handles this case with default header values.
+/*
+DeleteLeasesForbidden handles this case with default header values.
 
 Failed to authenticate request
 */
@@ -140,7 +142,8 @@ func NewDeleteLeasesInternalServerError() *DeleteLeasesInternalServerError {
 	return &DeleteLeasesInternalServerError{}
 }
 
-/*DeleteLeasesInternalServerError handles this case with default header values.
+/*
+DeleteLeasesInternalServerError handles this case with default header values.
 
 Server errors if the database cannot be reached.
 */
@@ -156,7 +159,8 @@ func (o *DeleteLeasesInternalServerError) readResponse(response runtime.ClientRe
 	return nil
 }
 
-/*DeleteLeasesBody delete leases body
+/*
+DeleteLeasesBody delete leases body
 swagger:model DeleteLeasesBody
 */
 type DeleteLeasesBody struct {
@@ -224,7 +228,8 @@ func (o *DeleteLeasesBody) UnmarshalBinary(b []byte) error {
 	return nil
 }
 
-/*DeleteLeasesOKBody Lease Details
+/*
+DeleteLeasesOKBody Lease Details
 swagger:model DeleteLeasesOKBody
 */
 type DeleteLeasesOKBody struct {

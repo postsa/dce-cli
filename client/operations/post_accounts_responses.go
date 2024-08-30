@@ -47,7 +47,8 @@ func NewPostAccountsCreated() *PostAccountsCreated {
 	return &PostAccountsCreated{}
 }
 
-/*PostAccountsCreated handles this case with default header values.
+/*
+PostAccountsCreated handles this case with default header values.
 
 Account Details
 */
@@ -82,7 +83,8 @@ func NewPostAccountsForbidden() *PostAccountsForbidden {
 	return &PostAccountsForbidden{}
 }
 
-/*PostAccountsForbidden handles this case with default header values.
+/*
+PostAccountsForbidden handles this case with default header values.
 
 Failed to authenticate request
 */
@@ -98,7 +100,8 @@ func (o *PostAccountsForbidden) readResponse(response runtime.ClientResponse, co
 	return nil
 }
 
-/*PostAccountsBody post accounts body
+/*
+PostAccountsBody post accounts body
 swagger:model PostAccountsBody
 */
 type PostAccountsBody struct {

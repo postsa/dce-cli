@@ -56,7 +56,8 @@ func NewPostLeasesIDAuthParamsWithHTTPClient(client *http.Client) *PostLeasesIDA
 	}
 }
 
-/*PostLeasesIDAuthParams contains all the parameters to send to the API endpoint
+/*
+PostLeasesIDAuthParams contains all the parameters to send to the API endpoint
 for the post leases ID auth operation typically these are written to a http.Request
 */
 type PostLeasesIDAuthParams struct {

@@ -49,7 +49,8 @@ func NewGetAccountsIDOK() *GetAccountsIDOK {
 	return &GetAccountsIDOK{}
 }
 
-/*GetAccountsIDOK handles this case with default header values.
+/*
+GetAccountsIDOK handles this case with default header values.
 
 GetAccountsIDOK get accounts Id o k
 */
@@ -97,7 +98,8 @@ func NewGetAccountsIDForbidden() *GetAccountsIDForbidden {
 	return &GetAccountsIDForbidden{}
 }
 
-/*GetAccountsIDForbidden handles this case with default header values.
+/*
+GetAccountsIDForbidden handles this case with default header values.
 
 Failed to retrieve account
 */
@@ -113,7 +115,8 @@ func (o *GetAccountsIDForbidden) readResponse(response runtime.ClientResponse, c
 	return nil
 }
 
-/*GetAccountsIDOKBody Account Details
+/*
+GetAccountsIDOKBody Account Details
 swagger:model GetAccountsIDOKBody
 */
 type GetAccountsIDOKBody struct {

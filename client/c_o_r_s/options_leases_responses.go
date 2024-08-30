@@ -38,7 +38,8 @@ func NewOptionsLeasesOK() *OptionsLeasesOK {
 	return &OptionsLeasesOK{}
 }
 
-/*OptionsLeasesOK handles this case with default header values.
+/*
+OptionsLeasesOK handles this case with default header values.
 
 Default response for CORS method
 */

@@ -56,7 +56,8 @@ func NewOptionsAccountsParamsWithHTTPClient(client *http.Client) *OptionsAccount
 	}
 }
 
-/*OptionsAccountsParams contains all the parameters to send to the API endpoint
+/*
+OptionsAccountsParams contains all the parameters to send to the API endpoint
 for the options accounts operation typically these are written to a http.Request
 */
 type OptionsAccountsParams struct {

@@ -38,7 +38,8 @@ func NewOptionsAuthOK() *OptionsAuthOK {
 	return &OptionsAuthOK{}
 }
 
-/*OptionsAuthOK handles this case with default header values.
+/*
+OptionsAuthOK handles this case with default header values.
 
 Default response for CORS method
 */

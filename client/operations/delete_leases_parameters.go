@@ -56,7 +56,8 @@ func NewDeleteLeasesParamsWithHTTPClient(client *http.Client) *DeleteLeasesParam
 	}
 }
 
-/*DeleteLeasesParams contains all the parameters to send to the API endpoint
+/*
+DeleteLeasesParams contains all the parameters to send to the API endpoint
 for the delete leases operation typically these are written to a http.Request
 */
 type DeleteLeasesParams struct {

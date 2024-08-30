@@ -38,7 +38,8 @@ func NewOptionsUsageOK() *OptionsUsageOK {
 	return &OptionsUsageOK{}
 }
 
-/*OptionsUsageOK handles this case with default header values.
+/*
+OptionsUsageOK handles this case with default header values.
 
 Default response for CORS method
 */
