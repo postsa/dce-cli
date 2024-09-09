@@ -14,9 +14,16 @@ type ClientService struct {
 	mock.Mock
 }
 
-// DeleteAccountsID provides a mock function with given fields: params, authInfo
-func (_m *ClientService) DeleteAccountsID(params *operations.DeleteAccountsIDParams, authInfo runtime.ClientAuthInfoWriter) (*operations.DeleteAccountsIDNoContent, error) {
-	ret := _m.Called(params, authInfo)
+// DeleteAccountsID provides a mock function with given fields: params, authInfo, opts
+func (_m *ClientService) DeleteAccountsID(params *operations.DeleteAccountsIDParams, authInfo runtime.ClientAuthInfoWriter, opts ...operations.ClientOption) (*operations.DeleteAccountsIDNoContent, error) {
+	_va := make([]interface{}, len(opts))
+	for _i := range opts {
+		_va[_i] = opts[_i]
+	}
+	var _ca []interface{}
+	_ca = append(_ca, params, authInfo)
+	_ca = append(_ca, _va...)
+	ret := _m.Called(_ca...)
 
 	if len(ret) == 0 {
 		panic("no return value specified for DeleteAccountsID")
@@ -24,19 +31,19 @@ func (_m *ClientService) DeleteAccountsID(params *operations.DeleteAccountsIDPar
 
 	var r0 *operations.DeleteAccountsIDNoContent
 	var r1 error
-	if rf, ok := ret.Get(0).(func(*operations.DeleteAccountsIDParams, runtime.ClientAuthInfoWriter) (*operations.DeleteAccountsIDNoContent, error)); ok {
-		return rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.DeleteAccountsIDParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) (*operations.DeleteAccountsIDNoContent, error)); ok {
+		return rf(params, authInfo, opts...)
 	}
-	if rf, ok := ret.Get(0).(func(*operations.DeleteAccountsIDParams, runtime.ClientAuthInfoWriter) *operations.DeleteAccountsIDNoContent); ok {
-		r0 = rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.DeleteAccountsIDParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) *operations.DeleteAccountsIDNoContent); ok {
+		r0 = rf(params, authInfo, opts...)
 	} else {
 		if ret.Get(0) != nil {
 			r0 = ret.Get(0).(*operations.DeleteAccountsIDNoContent)
 		}
 	}
 
-	if rf, ok := ret.Get(1).(func(*operations.DeleteAccountsIDParams, runtime.ClientAuthInfoWriter) error); ok {
-		r1 = rf(params, authInfo)
+	if rf, ok := ret.Get(1).(func(*operations.DeleteAccountsIDParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) error); ok {
+		r1 = rf(params, authInfo, opts...)
 	} else {
 		r1 = ret.Error(1)
 	}
@@ -44,9 +51,16 @@ func (_m *ClientService) DeleteAccountsID(params *operations.DeleteAccountsIDPar
 	return r0, r1
 }
 
-// DeleteLeases provides a mock function with given fields: params, authInfo
-func (_m *ClientService) DeleteLeases(params *operations.DeleteLeasesParams, authInfo runtime.ClientAuthInfoWriter) (*operations.DeleteLeasesOK, error) {
-	ret := _m.Called(params, authInfo)
+// DeleteLeases provides a mock function with given fields: params, authInfo, opts
+func (_m *ClientService) DeleteLeases(params *operations.DeleteLeasesParams, authInfo runtime.ClientAuthInfoWriter, opts ...operations.ClientOption) (*operations.DeleteLeasesOK, error) {
+	_va := make([]interface{}, len(opts))
+	for _i := range opts {
+		_va[_i] = opts[_i]
+	}
+	var _ca []interface{}
+	_ca = append(_ca, params, authInfo)
+	_ca = append(_ca, _va...)
+	ret := _m.Called(_ca...)
 
 	if len(ret) == 0 {
 		panic("no return value specified for DeleteLeases")
@@ -54,19 +68,19 @@ func (_m *ClientService) DeleteLeases(params *operations.DeleteLeasesParams, aut
 
 	var r0 *operations.DeleteLeasesOK
 	var r1 error
-	if rf, ok := ret.Get(0).(func(*operations.DeleteLeasesParams, runtime.ClientAuthInfoWriter) (*operations.DeleteLeasesOK, error)); ok {
-		return rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.DeleteLeasesParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) (*operations.DeleteLeasesOK, error)); ok {
+		return rf(params, authInfo, opts...)
 	}
-	if rf, ok := ret.Get(0).(func(*operations.DeleteLeasesParams, runtime.ClientAuthInfoWriter) *operations.DeleteLeasesOK); ok {
-		r0 = rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.DeleteLeasesParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) *operations.DeleteLeasesOK); ok {
+		r0 = rf(params, authInfo, opts...)
 	} else {
 		if ret.Get(0) != nil {
 			r0 = ret.Get(0).(*operations.DeleteLeasesOK)
 		}
 	}
 
-	if rf, ok := ret.Get(1).(func(*operations.DeleteLeasesParams, runtime.ClientAuthInfoWriter) error); ok {
-		r1 = rf(params, authInfo)
+	if rf, ok := ret.Get(1).(func(*operations.DeleteLeasesParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) error); ok {
+		r1 = rf(params, authInfo, opts...)
 	} else {
 		r1 = ret.Error(1)
 	}
@@ -74,9 +88,16 @@ func (_m *ClientService) DeleteLeases(params *operations.DeleteLeasesParams, aut
 	return r0, r1
 }
 
-// DeleteLeasesID provides a mock function with given fields: params, authInfo
-func (_m *ClientService) DeleteLeasesID(params *operations.DeleteLeasesIDParams, authInfo runtime.ClientAuthInfoWriter) (*operations.DeleteLeasesIDOK, error) {
-	ret := _m.Called(params, authInfo)
+// DeleteLeasesID provides a mock function with given fields: params, authInfo, opts
+func (_m *ClientService) DeleteLeasesID(params *operations.DeleteLeasesIDParams, authInfo runtime.ClientAuthInfoWriter, opts ...operations.ClientOption) (*operations.DeleteLeasesIDOK, error) {
+	_va := make([]interface{}, len(opts))
+	for _i := range opts {
+		_va[_i] = opts[_i]
+	}
+	var _ca []interface{}
+	_ca = append(_ca, params, authInfo)
+	_ca = append(_ca, _va...)
+	ret := _m.Called(_ca...)
 
 	if len(ret) == 0 {
 		panic("no return value specified for DeleteLeasesID")
@@ -84,19 +105,19 @@ func (_m *ClientService) DeleteLeasesID(params *operations.DeleteLeasesIDParams,
 
 	var r0 *operations.DeleteLeasesIDOK
 	var r1 error
-	if rf, ok := ret.Get(0).(func(*operations.DeleteLeasesIDParams, runtime.ClientAuthInfoWriter) (*operations.DeleteLeasesIDOK, error)); ok {
-		return rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.DeleteLeasesIDParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) (*operations.DeleteLeasesIDOK, error)); ok {
+		return rf(params, authInfo, opts...)
 	}
-	if rf, ok := ret.Get(0).(func(*operations.DeleteLeasesIDParams, runtime.ClientAuthInfoWriter) *operations.DeleteLeasesIDOK); ok {
-		r0 = rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.DeleteLeasesIDParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) *operations.DeleteLeasesIDOK); ok {
+		r0 = rf(params, authInfo, opts...)
 	} else {
 		if ret.Get(0) != nil {
 			r0 = ret.Get(0).(*operations.DeleteLeasesIDOK)
 		}
 	}
 
-	if rf, ok := ret.Get(1).(func(*operations.DeleteLeasesIDParams, runtime.ClientAuthInfoWriter) error); ok {
-		r1 = rf(params, authInfo)
+	if rf, ok := ret.Get(1).(func(*operations.DeleteLeasesIDParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) error); ok {
+		r1 = rf(params, authInfo, opts...)
 	} else {
 		r1 = ret.Error(1)
 	}
@@ -104,9 +125,16 @@ func (_m *ClientService) DeleteLeasesID(params *operations.DeleteLeasesIDParams,
 	return r0, r1
 }
 
-// GetAccounts provides a mock function with given fields: params, authInfo
-func (_m *ClientService) GetAccounts(params *operations.GetAccountsParams, authInfo runtime.ClientAuthInfoWriter) (*operations.GetAccountsOK, error) {
-	ret := _m.Called(params, authInfo)
+// GetAccounts provides a mock function with given fields: params, authInfo, opts
+func (_m *ClientService) GetAccounts(params *operations.GetAccountsParams, authInfo runtime.ClientAuthInfoWriter, opts ...operations.ClientOption) (*operations.GetAccountsOK, error) {
+	_va := make([]interface{}, len(opts))
+	for _i := range opts {
+		_va[_i] = opts[_i]
+	}
+	var _ca []interface{}
+	_ca = append(_ca, params, authInfo)
+	_ca = append(_ca, _va...)
+	ret := _m.Called(_ca...)
 
 	if len(ret) == 0 {
 		panic("no return value specified for GetAccounts")
@@ -114,19 +142,19 @@ func (_m *ClientService) GetAccounts(params *operations.GetAccountsParams, authI
 
 	var r0 *operations.GetAccountsOK
 	var r1 error
-	if rf, ok := ret.Get(0).(func(*operations.GetAccountsParams, runtime.ClientAuthInfoWriter) (*operations.GetAccountsOK, error)); ok {
-		return rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.GetAccountsParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) (*operations.GetAccountsOK, error)); ok {
+		return rf(params, authInfo, opts...)
 	}
-	if rf, ok := ret.Get(0).(func(*operations.GetAccountsParams, runtime.ClientAuthInfoWriter) *operations.GetAccountsOK); ok {
-		r0 = rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.GetAccountsParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) *operations.GetAccountsOK); ok {
+		r0 = rf(params, authInfo, opts...)
 	} else {
 		if ret.Get(0) != nil {
 			r0 = ret.Get(0).(*operations.GetAccountsOK)
 		}
 	}
 
-	if rf, ok := ret.Get(1).(func(*operations.GetAccountsParams, runtime.ClientAuthInfoWriter) error); ok {
-		r1 = rf(params, authInfo)
+	if rf, ok := ret.Get(1).(func(*operations.GetAccountsParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) error); ok {
+		r1 = rf(params, authInfo, opts...)
 	} else {
 		r1 = ret.Error(1)
 	}
@@ -134,9 +162,16 @@ func (_m *ClientService) GetAccounts(params *operations.GetAccountsParams, authI
 	return r0, r1
 }
 
-// GetAccountsID provides a mock function with given fields: params, authInfo
-func (_m *ClientService) GetAccountsID(params *operations.GetAccountsIDParams, authInfo runtime.ClientAuthInfoWriter) (*operations.GetAccountsIDOK, error) {
-	ret := _m.Called(params, authInfo)
+// GetAccountsID provides a mock function with given fields: params, authInfo, opts
+func (_m *ClientService) GetAccountsID(params *operations.GetAccountsIDParams, authInfo runtime.ClientAuthInfoWriter, opts ...operations.ClientOption) (*operations.GetAccountsIDOK, error) {
+	_va := make([]interface{}, len(opts))
+	for _i := range opts {
+		_va[_i] = opts[_i]
+	}
+	var _ca []interface{}
+	_ca = append(_ca, params, authInfo)
+	_ca = append(_ca, _va...)
+	ret := _m.Called(_ca...)
 
 	if len(ret) == 0 {
 		panic("no return value specified for GetAccountsID")
@@ -144,19 +179,19 @@ func (_m *ClientService) GetAccountsID(params *operations.GetAccountsIDParams, a
 
 	var r0 *operations.GetAccountsIDOK
 	var r1 error
-	if rf, ok := ret.Get(0).(func(*operations.GetAccountsIDParams, runtime.ClientAuthInfoWriter) (*operations.GetAccountsIDOK, error)); ok {
-		return rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.GetAccountsIDParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) (*operations.GetAccountsIDOK, error)); ok {
+		return rf(params, authInfo, opts...)
 	}
-	if rf, ok := ret.Get(0).(func(*operations.GetAccountsIDParams, runtime.ClientAuthInfoWriter) *operations.GetAccountsIDOK); ok {
-		r0 = rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.GetAccountsIDParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) *operations.GetAccountsIDOK); ok {
+		r0 = rf(params, authInfo, opts...)
 	} else {
 		if ret.Get(0) != nil {
 			r0 = ret.Get(0).(*operations.GetAccountsIDOK)
 		}
 	}
 
-	if rf, ok := ret.Get(1).(func(*operations.GetAccountsIDParams, runtime.ClientAuthInfoWriter) error); ok {
-		r1 = rf(params, authInfo)
+	if rf, ok := ret.Get(1).(func(*operations.GetAccountsIDParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) error); ok {
+		r1 = rf(params, authInfo, opts...)
 	} else {
 		r1 = ret.Error(1)
 	}
@@ -164,9 +199,16 @@ func (_m *ClientService) GetAccountsID(params *operations.GetAccountsIDParams, a
 	return r0, r1
 }
 
-// GetAuth provides a mock function with given fields: params
-func (_m *ClientService) GetAuth(params *operations.GetAuthParams) (*operations.GetAuthOK, error) {
-	ret := _m.Called(params)
+// GetAuth provides a mock function with given fields: params, opts
+func (_m *ClientService) GetAuth(params *operations.GetAuthParams, opts ...operations.ClientOption) (*operations.GetAuthOK, error) {
+	_va := make([]interface{}, len(opts))
+	for _i := range opts {
+		_va[_i] = opts[_i]
+	}
+	var _ca []interface{}
+	_ca = append(_ca, params)
+	_ca = append(_ca, _va...)
+	ret := _m.Called(_ca...)
 
 	if len(ret) == 0 {
 		panic("no return value specified for GetAuth")
@@ -174,19 +216,19 @@ func (_m *ClientService) GetAuth(params *operations.GetAuthParams) (*operations.
 
 	var r0 *operations.GetAuthOK
 	var r1 error
-	if rf, ok := ret.Get(0).(func(*operations.GetAuthParams) (*operations.GetAuthOK, error)); ok {
-		return rf(params)
+	if rf, ok := ret.Get(0).(func(*operations.GetAuthParams, ...operations.ClientOption) (*operations.GetAuthOK, error)); ok {
+		return rf(params, opts...)
 	}
-	if rf, ok := ret.Get(0).(func(*operations.GetAuthParams) *operations.GetAuthOK); ok {
-		r0 = rf(params)
+	if rf, ok := ret.Get(0).(func(*operations.GetAuthParams, ...operations.ClientOption) *operations.GetAuthOK); ok {
+		r0 = rf(params, opts...)
 	} else {
 		if ret.Get(0) != nil {
 			r0 = ret.Get(0).(*operations.GetAuthOK)
 		}
 	}
 
-	if rf, ok := ret.Get(1).(func(*operations.GetAuthParams) error); ok {
-		r1 = rf(params)
+	if rf, ok := ret.Get(1).(func(*operations.GetAuthParams, ...operations.ClientOption) error); ok {
+		r1 = rf(params, opts...)
 	} else {
 		r1 = ret.Error(1)
 	}
@@ -194,9 +236,16 @@ func (_m *ClientService) GetAuth(params *operations.GetAuthParams) (*operations.
 	return r0, r1
 }
 
-// GetAuthFile provides a mock function with given fields: params
-func (_m *ClientService) GetAuthFile(params *operations.GetAuthFileParams) (*operations.GetAuthFileOK, error) {
-	ret := _m.Called(params)
+// GetAuthFile provides a mock function with given fields: params, opts
+func (_m *ClientService) GetAuthFile(params *operations.GetAuthFileParams, opts ...operations.ClientOption) (*operations.GetAuthFileOK, error) {
+	_va := make([]interface{}, len(opts))
+	for _i := range opts {
+		_va[_i] = opts[_i]
+	}
+	var _ca []interface{}
+	_ca = append(_ca, params)
+	_ca = append(_ca, _va...)
+	ret := _m.Called(_ca...)
 
 	if len(ret) == 0 {
 		panic("no return value specified for GetAuthFile")
@@ -204,19 +253,19 @@ func (_m *ClientService) GetAuthFile(params *operations.GetAuthFileParams) (*ope
 
 	var r0 *operations.GetAuthFileOK
 	var r1 error
-	if rf, ok := ret.Get(0).(func(*operations.GetAuthFileParams) (*operations.GetAuthFileOK, error)); ok {
-		return rf(params)
+	if rf, ok := ret.Get(0).(func(*operations.GetAuthFileParams, ...operations.ClientOption) (*operations.GetAuthFileOK, error)); ok {
+		return rf(params, opts...)
 	}
-	if rf, ok := ret.Get(0).(func(*operations.GetAuthFileParams) *operations.GetAuthFileOK); ok {
-		r0 = rf(params)
+	if rf, ok := ret.Get(0).(func(*operations.GetAuthFileParams, ...operations.ClientOption) *operations.GetAuthFileOK); ok {
+		r0 = rf(params, opts...)
 	} else {
 		if ret.Get(0) != nil {
 			r0 = ret.Get(0).(*operations.GetAuthFileOK)
 		}
 	}
 
-	if rf, ok := ret.Get(1).(func(*operations.GetAuthFileParams) error); ok {
-		r1 = rf(params)
+	if rf, ok := ret.Get(1).(func(*operations.GetAuthFileParams, ...operations.ClientOption) error); ok {
+		r1 = rf(params, opts...)
 	} else {
 		r1 = ret.Error(1)
 	}
@@ -224,9 +273,16 @@ func (_m *ClientService) GetAuthFile(params *operations.GetAuthFileParams) (*ope
 	return r0, r1
 }
 
-// GetLeases provides a mock function with given fields: params, authInfo
-func (_m *ClientService) GetLeases(params *operations.GetLeasesParams, authInfo runtime.ClientAuthInfoWriter) (*operations.GetLeasesOK, error) {
-	ret := _m.Called(params, authInfo)
+// GetLeases provides a mock function with given fields: params, authInfo, opts
+func (_m *ClientService) GetLeases(params *operations.GetLeasesParams, authInfo runtime.ClientAuthInfoWriter, opts ...operations.ClientOption) (*operations.GetLeasesOK, error) {
+	_va := make([]interface{}, len(opts))
+	for _i := range opts {
+		_va[_i] = opts[_i]
+	}
+	var _ca []interface{}
+	_ca = append(_ca, params, authInfo)
+	_ca = append(_ca, _va...)
+	ret := _m.Called(_ca...)
 
 	if len(ret) == 0 {
 		panic("no return value specified for GetLeases")
@@ -234,19 +290,19 @@ func (_m *ClientService) GetLeases(params *operations.GetLeasesParams, authInfo 
 
 	var r0 *operations.GetLeasesOK
 	var r1 error
-	if rf, ok := ret.Get(0).(func(*operations.GetLeasesParams, runtime.ClientAuthInfoWriter) (*operations.GetLeasesOK, error)); ok {
-		return rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.GetLeasesParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) (*operations.GetLeasesOK, error)); ok {
+		return rf(params, authInfo, opts...)
 	}
-	if rf, ok := ret.Get(0).(func(*operations.GetLeasesParams, runtime.ClientAuthInfoWriter) *operations.GetLeasesOK); ok {
-		r0 = rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.GetLeasesParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) *operations.GetLeasesOK); ok {
+		r0 = rf(params, authInfo, opts...)
 	} else {
 		if ret.Get(0) != nil {
 			r0 = ret.Get(0).(*operations.GetLeasesOK)
 		}
 	}
 
-	if rf, ok := ret.Get(1).(func(*operations.GetLeasesParams, runtime.ClientAuthInfoWriter) error); ok {
-		r1 = rf(params, authInfo)
+	if rf, ok := ret.Get(1).(func(*operations.GetLeasesParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) error); ok {
+		r1 = rf(params, authInfo, opts...)
 	} else {
 		r1 = ret.Error(1)
 	}
@@ -254,9 +310,16 @@ func (_m *ClientService) GetLeases(params *operations.GetLeasesParams, authInfo 
 	return r0, r1
 }
 
-// GetLeasesID provides a mock function with given fields: params, authInfo
-func (_m *ClientService) GetLeasesID(params *operations.GetLeasesIDParams, authInfo runtime.ClientAuthInfoWriter) (*operations.GetLeasesIDOK, error) {
-	ret := _m.Called(params, authInfo)
+// GetLeasesID provides a mock function with given fields: params, authInfo, opts
+func (_m *ClientService) GetLeasesID(params *operations.GetLeasesIDParams, authInfo runtime.ClientAuthInfoWriter, opts ...operations.ClientOption) (*operations.GetLeasesIDOK, error) {
+	_va := make([]interface{}, len(opts))
+	for _i := range opts {
+		_va[_i] = opts[_i]
+	}
+	var _ca []interface{}
+	_ca = append(_ca, params, authInfo)
+	_ca = append(_ca, _va...)
+	ret := _m.Called(_ca...)
 
 	if len(ret) == 0 {
 		panic("no return value specified for GetLeasesID")
@@ -264,19 +327,19 @@ func (_m *ClientService) GetLeasesID(params *operations.GetLeasesIDParams, authI
 
 	var r0 *operations.GetLeasesIDOK
 	var r1 error
-	if rf, ok := ret.Get(0).(func(*operations.GetLeasesIDParams, runtime.ClientAuthInfoWriter) (*operations.GetLeasesIDOK, error)); ok {
-		return rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.GetLeasesIDParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) (*operations.GetLeasesIDOK, error)); ok {
+		return rf(params, authInfo, opts...)
 	}
-	if rf, ok := ret.Get(0).(func(*operations.GetLeasesIDParams, runtime.ClientAuthInfoWriter) *operations.GetLeasesIDOK); ok {
-		r0 = rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.GetLeasesIDParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) *operations.GetLeasesIDOK); ok {
+		r0 = rf(params, authInfo, opts...)
 	} else {
 		if ret.Get(0) != nil {
 			r0 = ret.Get(0).(*operations.GetLeasesIDOK)
 		}
 	}
 
-	if rf, ok := ret.Get(1).(func(*operations.GetLeasesIDParams, runtime.ClientAuthInfoWriter) error); ok {
-		r1 = rf(params, authInfo)
+	if rf, ok := ret.Get(1).(func(*operations.GetLeasesIDParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) error); ok {
+		r1 = rf(params, authInfo, opts...)
 	} else {
 		r1 = ret.Error(1)
 	}
@@ -284,9 +347,16 @@ func (_m *ClientService) GetLeasesID(params *operations.GetLeasesIDParams, authI
 	return r0, r1
 }
 
-// GetUsage provides a mock function with given fields: params, authInfo
-func (_m *ClientService) GetUsage(params *operations.GetUsageParams, authInfo runtime.ClientAuthInfoWriter) (*operations.GetUsageOK, error) {
-	ret := _m.Called(params, authInfo)
+// GetUsage provides a mock function with given fields: params, authInfo, opts
+func (_m *ClientService) GetUsage(params *operations.GetUsageParams, authInfo runtime.ClientAuthInfoWriter, opts ...operations.ClientOption) (*operations.GetUsageOK, error) {
+	_va := make([]interface{}, len(opts))
+	for _i := range opts {
+		_va[_i] = opts[_i]
+	}
+	var _ca []interface{}
+	_ca = append(_ca, params, authInfo)
+	_ca = append(_ca, _va...)
+	ret := _m.Called(_ca...)
 
 	if len(ret) == 0 {
 		panic("no return value specified for GetUsage")
@@ -294,19 +364,19 @@ func (_m *ClientService) GetUsage(params *operations.GetUsageParams, authInfo ru
 
 	var r0 *operations.GetUsageOK
 	var r1 error
-	if rf, ok := ret.Get(0).(func(*operations.GetUsageParams, runtime.ClientAuthInfoWriter) (*operations.GetUsageOK, error)); ok {
-		return rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.GetUsageParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) (*operations.GetUsageOK, error)); ok {
+		return rf(params, authInfo, opts...)
 	}
-	if rf, ok := ret.Get(0).(func(*operations.GetUsageParams, runtime.ClientAuthInfoWriter) *operations.GetUsageOK); ok {
-		r0 = rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.GetUsageParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) *operations.GetUsageOK); ok {
+		r0 = rf(params, authInfo, opts...)
 	} else {
 		if ret.Get(0) != nil {
 			r0 = ret.Get(0).(*operations.GetUsageOK)
 		}
 	}
 
-	if rf, ok := ret.Get(1).(func(*operations.GetUsageParams, runtime.ClientAuthInfoWriter) error); ok {
-		r1 = rf(params, authInfo)
+	if rf, ok := ret.Get(1).(func(*operations.GetUsageParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) error); ok {
+		r1 = rf(params, authInfo, opts...)
 	} else {
 		r1 = ret.Error(1)
 	}
@@ -314,9 +384,16 @@ func (_m *ClientService) GetUsage(params *operations.GetUsageParams, authInfo ru
 	return r0, r1
 }
 
-// PostAccounts provides a mock function with given fields: params, authInfo
-func (_m *ClientService) PostAccounts(params *operations.PostAccountsParams, authInfo runtime.ClientAuthInfoWriter) (*operations.PostAccountsCreated, error) {
-	ret := _m.Called(params, authInfo)
+// PostAccounts provides a mock function with given fields: params, authInfo, opts
+func (_m *ClientService) PostAccounts(params *operations.PostAccountsParams, authInfo runtime.ClientAuthInfoWriter, opts ...operations.ClientOption) (*operations.PostAccountsCreated, error) {
+	_va := make([]interface{}, len(opts))
+	for _i := range opts {
+		_va[_i] = opts[_i]
+	}
+	var _ca []interface{}
+	_ca = append(_ca, params, authInfo)
+	_ca = append(_ca, _va...)
+	ret := _m.Called(_ca...)
 
 	if len(ret) == 0 {
 		panic("no return value specified for PostAccounts")
@@ -324,19 +401,19 @@ func (_m *ClientService) PostAccounts(params *operations.PostAccountsParams, aut
 
 	var r0 *operations.PostAccountsCreated
 	var r1 error
-	if rf, ok := ret.Get(0).(func(*operations.PostAccountsParams, runtime.ClientAuthInfoWriter) (*operations.PostAccountsCreated, error)); ok {
-		return rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.PostAccountsParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) (*operations.PostAccountsCreated, error)); ok {
+		return rf(params, authInfo, opts...)
 	}
-	if rf, ok := ret.Get(0).(func(*operations.PostAccountsParams, runtime.ClientAuthInfoWriter) *operations.PostAccountsCreated); ok {
-		r0 = rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.PostAccountsParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) *operations.PostAccountsCreated); ok {
+		r0 = rf(params, authInfo, opts...)
 	} else {
 		if ret.Get(0) != nil {
 			r0 = ret.Get(0).(*operations.PostAccountsCreated)
 		}
 	}
 
-	if rf, ok := ret.Get(1).(func(*operations.PostAccountsParams, runtime.ClientAuthInfoWriter) error); ok {
-		r1 = rf(params, authInfo)
+	if rf, ok := ret.Get(1).(func(*operations.PostAccountsParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) error); ok {
+		r1 = rf(params, authInfo, opts...)
 	} else {
 		r1 = ret.Error(1)
 	}
@@ -344,9 +421,16 @@ func (_m *ClientService) PostAccounts(params *operations.PostAccountsParams, aut
 	return r0, r1
 }
 
-// PostLeases provides a mock function with given fields: params, authInfo
-func (_m *ClientService) PostLeases(params *operations.PostLeasesParams, authInfo runtime.ClientAuthInfoWriter) (*operations.PostLeasesCreated, error) {
-	ret := _m.Called(params, authInfo)
+// PostLeases provides a mock function with given fields: params, authInfo, opts
+func (_m *ClientService) PostLeases(params *operations.PostLeasesParams, authInfo runtime.ClientAuthInfoWriter, opts ...operations.ClientOption) (*operations.PostLeasesCreated, error) {
+	_va := make([]interface{}, len(opts))
+	for _i := range opts {
+		_va[_i] = opts[_i]
+	}
+	var _ca []interface{}
+	_ca = append(_ca, params, authInfo)
+	_ca = append(_ca, _va...)
+	ret := _m.Called(_ca...)
 
 	if len(ret) == 0 {
 		panic("no return value specified for PostLeases")
@@ -354,19 +438,19 @@ func (_m *ClientService) PostLeases(params *operations.PostLeasesParams, authInf
 
 	var r0 *operations.PostLeasesCreated
 	var r1 error
-	if rf, ok := ret.Get(0).(func(*operations.PostLeasesParams, runtime.ClientAuthInfoWriter) (*operations.PostLeasesCreated, error)); ok {
-		return rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.PostLeasesParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) (*operations.PostLeasesCreated, error)); ok {
+		return rf(params, authInfo, opts...)
 	}
-	if rf, ok := ret.Get(0).(func(*operations.PostLeasesParams, runtime.ClientAuthInfoWriter) *operations.PostLeasesCreated); ok {
-		r0 = rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.PostLeasesParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) *operations.PostLeasesCreated); ok {
+		r0 = rf(params, authInfo, opts...)
 	} else {
 		if ret.Get(0) != nil {
 			r0 = ret.Get(0).(*operations.PostLeasesCreated)
 		}
 	}
 
-	if rf, ok := ret.Get(1).(func(*operations.PostLeasesParams, runtime.ClientAuthInfoWriter) error); ok {
-		r1 = rf(params, authInfo)
+	if rf, ok := ret.Get(1).(func(*operations.PostLeasesParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) error); ok {
+		r1 = rf(params, authInfo, opts...)
 	} else {
 		r1 = ret.Error(1)
 	}
@@ -374,39 +458,16 @@ func (_m *ClientService) PostLeases(params *operations.PostLeasesParams, authInf
 	return r0, r1
 }
 
-// PostLeasesAuth provides a mock function with given fields: params, authInfo
-func (_m *ClientService) PostLeasesAuth(params *operations.PostLeasesAuthParams, authInfo runtime.ClientAuthInfoWriter) (*operations.PostLeasesAuthCreated, error) {
-	ret := _m.Called(params, authInfo)
-
-	if len(ret) == 0 {
-		panic("no return value specified for PostLeasesAuth")
+// PostLeasesIDAuth provides a mock function with given fields: params, authInfo, opts
+func (_m *ClientService) PostLeasesIDAuth(params *operations.PostLeasesIDAuthParams, authInfo runtime.ClientAuthInfoWriter, opts ...operations.ClientOption) (*operations.PostLeasesIDAuthCreated, error) {
+	_va := make([]interface{}, len(opts))
+	for _i := range opts {
+		_va[_i] = opts[_i]
 	}
-
-	var r0 *operations.PostLeasesAuthCreated
-	var r1 error
-	if rf, ok := ret.Get(0).(func(*operations.PostLeasesAuthParams, runtime.ClientAuthInfoWriter) (*operations.PostLeasesAuthCreated, error)); ok {
-		return rf(params, authInfo)
-	}
-	if rf, ok := ret.Get(0).(func(*operations.PostLeasesAuthParams, runtime.ClientAuthInfoWriter) *operations.PostLeasesAuthCreated); ok {
-		r0 = rf(params, authInfo)
-	} else {
-		if ret.Get(0) != nil {
-			r0 = ret.Get(0).(*operations.PostLeasesAuthCreated)
-		}
-	}
-
-	if rf, ok := ret.Get(1).(func(*operations.PostLeasesAuthParams, runtime.ClientAuthInfoWriter) error); ok {
-		r1 = rf(params, authInfo)
-	} else {
-		r1 = ret.Error(1)
-	}
-
-	return r0, r1
-}
-
-// PostLeasesIDAuth provides a mock function with given fields: params, authInfo
-func (_m *ClientService) PostLeasesIDAuth(params *operations.PostLeasesIDAuthParams, authInfo runtime.ClientAuthInfoWriter) (*operations.PostLeasesIDAuthCreated, error) {
-	ret := _m.Called(params, authInfo)
+	var _ca []interface{}
+	_ca = append(_ca, params, authInfo)
+	_ca = append(_ca, _va...)
+	ret := _m.Called(_ca...)
 
 	if len(ret) == 0 {
 		panic("no return value specified for PostLeasesIDAuth")
@@ -414,19 +475,19 @@ func (_m *ClientService) PostLeasesIDAuth(params *operations.PostLeasesIDAuthPar
 
 	var r0 *operations.PostLeasesIDAuthCreated
 	var r1 error
-	if rf, ok := ret.Get(0).(func(*operations.PostLeasesIDAuthParams, runtime.ClientAuthInfoWriter) (*operations.PostLeasesIDAuthCreated, error)); ok {
-		return rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.PostLeasesIDAuthParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) (*operations.PostLeasesIDAuthCreated, error)); ok {
+		return rf(params, authInfo, opts...)
 	}
-	if rf, ok := ret.Get(0).(func(*operations.PostLeasesIDAuthParams, runtime.ClientAuthInfoWriter) *operations.PostLeasesIDAuthCreated); ok {
-		r0 = rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.PostLeasesIDAuthParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) *operations.PostLeasesIDAuthCreated); ok {
+		r0 = rf(params, authInfo, opts...)
 	} else {
 		if ret.Get(0) != nil {
 			r0 = ret.Get(0).(*operations.PostLeasesIDAuthCreated)
 		}
 	}
 
-	if rf, ok := ret.Get(1).(func(*operations.PostLeasesIDAuthParams, runtime.ClientAuthInfoWriter) error); ok {
-		r1 = rf(params, authInfo)
+	if rf, ok := ret.Get(1).(func(*operations.PostLeasesIDAuthParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) error); ok {
+		r1 = rf(params, authInfo, opts...)
 	} else {
 		r1 = ret.Error(1)
 	}
@@ -434,9 +495,16 @@ func (_m *ClientService) PostLeasesIDAuth(params *operations.PostLeasesIDAuthPar
 	return r0, r1
 }
 
-// PutAccountsID provides a mock function with given fields: params, authInfo
-func (_m *ClientService) PutAccountsID(params *operations.PutAccountsIDParams, authInfo runtime.ClientAuthInfoWriter) (*operations.PutAccountsIDOK, error) {
-	ret := _m.Called(params, authInfo)
+// PutAccountsID provides a mock function with given fields: params, authInfo, opts
+func (_m *ClientService) PutAccountsID(params *operations.PutAccountsIDParams, authInfo runtime.ClientAuthInfoWriter, opts ...operations.ClientOption) (*operations.PutAccountsIDOK, error) {
+	_va := make([]interface{}, len(opts))
+	for _i := range opts {
+		_va[_i] = opts[_i]
+	}
+	var _ca []interface{}
+	_ca = append(_ca, params, authInfo)
+	_ca = append(_ca, _va...)
+	ret := _m.Called(_ca...)
 
 	if len(ret) == 0 {
 		panic("no return value specified for PutAccountsID")
@@ -444,19 +512,19 @@ func (_m *ClientService) PutAccountsID(params *operations.PutAccountsIDParams, a
 
 	var r0 *operations.PutAccountsIDOK
 	var r1 error
-	if rf, ok := ret.Get(0).(func(*operations.PutAccountsIDParams, runtime.ClientAuthInfoWriter) (*operations.PutAccountsIDOK, error)); ok {
-		return rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.PutAccountsIDParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) (*operations.PutAccountsIDOK, error)); ok {
+		return rf(params, authInfo, opts...)
 	}
-	if rf, ok := ret.Get(0).(func(*operations.PutAccountsIDParams, runtime.ClientAuthInfoWriter) *operations.PutAccountsIDOK); ok {
-		r0 = rf(params, authInfo)
+	if rf, ok := ret.Get(0).(func(*operations.PutAccountsIDParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) *operations.PutAccountsIDOK); ok {
+		r0 = rf(params, authInfo, opts...)
 	} else {
 		if ret.Get(0) != nil {
 			r0 = ret.Get(0).(*operations.PutAccountsIDOK)
 		}
 	}
 
-	if rf, ok := ret.Get(1).(func(*operations.PutAccountsIDParams, runtime.ClientAuthInfoWriter) error); ok {
-		r1 = rf(params, authInfo)
+	if rf, ok := ret.Get(1).(func(*operations.PutAccountsIDParams, runtime.ClientAuthInfoWriter, ...operations.ClientOption) error); ok {
+		r1 = rf(params, authInfo, opts...)
 	} else {
 		r1 = ret.Error(1)
 	}
